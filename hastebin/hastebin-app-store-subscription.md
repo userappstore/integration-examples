@@ -90,7 +90,7 @@ When the conversion is complete `hastebin` will be ready for publishing on UserA
               
 ## Part one:  General compatibility requirements
 
-  1.  The hastebin project uses a static folder for its assets that are served at `/`.  Remapping that to `/public` lets the files be served faster because Dashboard servers that folder without authenticating the user.  This matters a lot if you have many static assets.
+  1.  The hastebin project uses a static folder for its assets that are served at `/`.  Remapping that to `/public` lets the files be served faster because Dashboard serves that folder without authenticating the user.  This matters a lot if you have many static assets.
 
   2.  The HTML markup will be served to the user in an `IFRAME` `srcdoc`.  Care must be taken to use " instead of ' in your HTML markup so the srcdoc can inline your page.
 
