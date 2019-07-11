@@ -1,8 +1,8 @@
 # Converting hastebin to a Dashboard application server for app stores
 
-[Hastebin](https://github.com/seejohnrun/haste-server) is a 'pastebin' web application you post code and text to share.  The application has no user accounts, all posts are anonymous and publicly accessible via a generated URL.  This conversion is based on `hastebin`'s source code, updated to be asynchronous and 
+[Hastebin](https://github.com/seejohnrun/haste-server) is a 'pastebin' web application you post code and text to share.  The application has no user accounts, all posts are anonymous and publicly accessible via a generated URL.  This conversion is based on `hastebin`'s source code.
 
-[Dashboard](https://github.com/userdashboard/dashboard) is a reusable interface for user account management with modules for more.  It runs separately to your web application, as users browse your Dashboard server they receive content from itself or your application server combined into a single website.  When Dashboard proxies an application server it includes user account and session information in the req.
+[Dashboard](https://github.com/userdashboard/dashboard) is a reusable interface for user account management with modules for more.  It runs separately to your web application, as users browse your Dashboard server they receive content from itself or your application server combined into a single website.  When Dashboard proxies an application server it includes user account and session information in the request headers.
 
 [UserAppStore](https://userappstore.com) is a portal for coding and using web applications.  Users may code single project apps or import application servers by their URL.  Compatibility means retrofitting `hastebin` to be a Dashboard application server and tweaking it to for compatibility with websites using the [app store software](https://github.com/userappstore/app-store-dashboard-server) where it will run in a sandboxed iframe.
 
